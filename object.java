@@ -1,6 +1,5 @@
 class Calculator
 {
-  int a = 1;
 
   public int add(int n1,int n2)
   {
