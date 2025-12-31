@@ -49,6 +49,40 @@ public class array
       System.out.println();
     }
 
-    
+    // Jagged Array
+
+    int jagged[][] = new int[3][];
+
+    jagged[0] = new int[4];
+    jagged[1] = new int[2];
+    jagged[2] = new int[5];
+
+    /* 
+    for(int i=0; i<jagged.length; i++)
+    {
+      for(int j=0; j<jagged[i].length; j++)
+      {
+        jagged[i][j] = (int)(Math.random()*10);
+      }
+    } 
+    */
+
+    for (int jagged_rows[] : jagged) 
+    {
+    for (int j = 0; j < jagged_rows.length; j++) 
+      {
+        jagged_rows[j] = (int)(Math.random()*10);
+      }
+    }
+
+    for(int k[] : jagged)
+    {
+      for(int m : k)
+      {
+        System.out.print(m + " ");
+      }
+      System.out.println();
+    }
+
   }
 }
