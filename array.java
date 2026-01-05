@@ -69,7 +69,7 @@ public class array
 
     for (int jagged_rows[] : jagged) 
     {
-    for (int j = 0; j < jagged_rows.length; j++) 
+      for (int j = 0; j < jagged_rows.length; j++) 
       {
         jagged_rows[j] = (int)(Math.random()*10);
       }
